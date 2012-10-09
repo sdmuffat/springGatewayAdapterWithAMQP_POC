@@ -7,7 +7,7 @@ public class ServiceActivator {
 
 
 	public String serve(String request) throws Exception {
-		System.out.println("service message: " + request);
+		System.out.println("ServiceActivator: service message: " + request);
 		String retVal = null;
 		if (request.equals("good"))
 		{
