@@ -53,7 +53,8 @@
 	<!-- #################################################################################################### -->
 	<!-- Parsing. -->
 	<!-- #################################################################################################### -->
-	<int:chain input-channel="fromRabbit" output-channel="parseOutChannel">
+	<int:chain input-channel="fromRabbit"
+		output-channel="parseOutChannel" id="Parsing Chain">
 		<int:service-activator ref="parseGatewayService"
 			method="service" />
 	</int:chain>
