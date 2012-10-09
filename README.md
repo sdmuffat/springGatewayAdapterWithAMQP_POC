@@ -1,9 +1,9 @@
-Spring Integration - AMQP Sample
-================================
+Spring Integration - AMQP/Gateway Adapter Pattern POC
+======================================================
 
 # Overview
 
-This sample demonstrates basic functionality of the **Spring Integration AMQP Adapter**, which uses the [Advanced Message Queuing Protocol](http://www.amqp.org/) (AMQP) to send and retrieve messages. As AMQP Broker implementation the sample uses [RabbitMQ](http://www.rabbitmq.com/).
+This sample demonstrates basic functionality of the **Spring Integration AMQP Adapter** interacting with a gateway using the Adapter Pattern (http://techiquest.blogspot.com/2012/07/spring-integration-message-gateway.html)  The AMQP Broker implementation sample uses [RabbitMQ](http://www.rabbitmq.com/).
 
 Once the application is started, you enter some text on the command prompt and a message containing that entered text is dispatched to the AMQP queue. In return that message is retrieved by Spring Integration and then printed to the console. 
 
