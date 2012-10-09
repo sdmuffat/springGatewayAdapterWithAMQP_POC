@@ -23,7 +23,7 @@
 
 	<int-stream:stdin-channel-adapter id="consoleIn"
 		channel="toRabbit">
-		<int:poller fixed-delay="1000" max-messages-per-poll="1" />
+		<int:poller fixed-delay="500" max-messages-per-poll="1" />
 	</int-stream:stdin-channel-adapter>
 
 	<int:channel id="toRabbit" />
@@ -35,7 +35,8 @@
 	<!-- From RabbitMQ To STDOUT -->
 
 	<int-amqp:inbound-channel-adapter
-		channel="fromRabbit" queue-names="si.test.queue" connection-factory="connectionFactory" />
+		channel="fromRabbit" queue-names="si.test.queue" connection-factory="connectionFactory"
+		concurrent-consumers="2" />
 
 	<int:channel id="fromRabbit">
 		<int:interceptors>

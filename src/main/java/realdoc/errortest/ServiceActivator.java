@@ -3,7 +3,7 @@ package realdoc.errortest;
 
 public class ServiceActivator {
 
-	private static final long SLEEP_TIME_MILLIS = 10000;
+	private static final long SLEEP_TIME_MILLIS = 19000;
 
 
 	public String serve(String request) throws Exception {
