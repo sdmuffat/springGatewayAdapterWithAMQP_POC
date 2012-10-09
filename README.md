@@ -1,0 +1,2 @@
+springGatewayAdapterWithAMQP_POC
+================================
