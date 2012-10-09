@@ -20,7 +20,7 @@ import org.springframework.util.StopWatch;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration
-public class ThoroughTest {
+public class ThoroughTestNotUsed {
 
 	private static final String SUBMIT_ACTION = "submit";
 	private static final long MAX_TIME_MILLIS = 100;
