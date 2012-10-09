@@ -29,7 +29,7 @@ public class ParseGatewayService  {
             System.err.println("Exception response received from gateway/exception: " + getClass() + "/" + e);
             System.err.println("Invoking exception handling process because: " + e.getCause());
             // send an exception somewhere?
-            throw e;
+            return null;
         }
 
         System.out.println ("Time in ms: " + stopWatch.getLastTaskTimeMillis());
